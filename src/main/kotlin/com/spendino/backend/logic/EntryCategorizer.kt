@@ -10,7 +10,7 @@ class EntryCategorizer {
     private val oneTime = "oneTime"
     private val base = "Base"
 
-    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se", "lån")
+    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se")
 
     private val straightMatches = hashMapOf(
             "gbg energi" to Pair(housingCat, "EL"),
@@ -25,10 +25,12 @@ class EntryCategorizer {
             "spotify" to Pair(monthlyCat, "Streaming"),
             "netflix.com" to Pair(monthlyCat, "Streaming"),
             "hbo nordic" to Pair(monthlyCat, "Streaming"),
+            "audible" to Pair(monthlyCat, "Streaming"),
             "steampowered" to Pair(oneTime, "Datorspel"),
             "stora coop backaplan" to Pair(base, "Mat och bas"),
             "willys" to Pair(base, "Mat och bas"),
             "ica nära" to Pair(base, "Mat och bas"),
+            "ica nara" to Pair(base, "Mat och bas"),
             "ica supermarket" to Pair(base, "Mat och bas"),
             "sannegardens" to Pair(base, "Mat ute"),
             "systembolaget" to Pair(base, "Öl"),
@@ -46,7 +48,9 @@ class EntryCategorizer {
         }
 
         if(description == "brf cyklisten") {
-            return SpendingEntry(housingCat, "Hyra", 2618)
+            return SpendingEntry(housingCat, "Hyra", -2618)
+        } else if(description.startsWith("lån")) {
+            return SpendingEntry(housingCat, "Ränta", statementEntry.amount + 2618)
         }
 
         for((matchString, categories) in straightMatches) {

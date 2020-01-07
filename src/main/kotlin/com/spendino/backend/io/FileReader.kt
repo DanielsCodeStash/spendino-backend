@@ -1,5 +1,6 @@
 import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
+import com.spendino.backend.io.InputFileType
 import com.spendino.backend.io.StatementReader
 import com.spendino.backend.logic.EntryCategorizer
 import java.io.File
@@ -8,7 +9,7 @@ fun main() {
 
     val files = FileReader().getDataFiles()
 
-    val statements = StatementReader().parseFile(files[0])
+    val statements = StatementReader().parseFile(files[0], InputFileType.CARD);
 
     val categorizer = EntryCategorizer();
     val outSpendingEntries = ArrayList<SpendingEntry>()
@@ -36,7 +37,7 @@ class FileReader {
     fun getDataFiles() : List<String> {
 
         if(1==1)
-            return listOf("C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\seb.txt")
+            return listOf("C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\card.txt")
 
         val dataPath = System.getProperty("data_folder")
 
