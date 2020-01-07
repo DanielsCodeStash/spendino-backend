@@ -1,22 +1,23 @@
-package com.spendino.backend
+package com.spendino.backend.logic
 
 import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
 
-class Categorizer {
+class EntryCategorizer {
 
     private val housingCat = "Bostad"
     private val monthlyCat = "Fasta utgift"
     private val oneTime = "oneTime"
     private val base = "Base"
 
-    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se")
+    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se", "lån")
 
     private val straightMatches = hashMapOf(
             "gbg energi" to Pair(housingCat, "EL"),
             "göteborg energi" to Pair(housingCat, "EL"),
-            "Csn" to Pair(monthlyCat, "CSN"),
+            "csn" to Pair(monthlyCat, "CSN"),
             "aea" to Pair(monthlyCat, "Akassa"),
+            "folksam" to Pair(monthlyCat, "Försäkring"),
             "frisktandv" to Pair(monthlyCat, "Tandvård"),
             "enkla vardag" to Pair(monthlyCat, "Bank"),
             "västtrafik a" to Pair(monthlyCat, "Västtrafik"),
@@ -44,7 +45,7 @@ class Categorizer {
             return null
         }
 
-        if(description == "Brf cyklisten") {
+        if(description == "brf cyklisten") {
             return SpendingEntry(housingCat, "Hyra", 2618)
         }
 
@@ -54,7 +55,7 @@ class Categorizer {
             }
         }
 
-        return null
+        return SpendingEntry("<needs classification>", statementEntry.description, statementEntry.amount)
     }
 
 

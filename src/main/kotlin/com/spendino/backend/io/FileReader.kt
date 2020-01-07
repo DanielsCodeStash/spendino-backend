@@ -1,15 +1,50 @@
+import com.spendino.backend.data.SpendingEntry
+import com.spendino.backend.data.StatementEntry
+import com.spendino.backend.io.StatementReader
+import com.spendino.backend.logic.EntryCategorizer
 import java.io.File
 
 fun main() {
 
-    val dataPath = System.getProperty("data_folder")
+    val files = FileReader().getDataFiles()
 
-    val fileNames = File(dataPath)
-        .walk()
-        .map{it.name}
-        .filter{it.startsWith("20")}
-        .toList()
+    val statements = StatementReader().parseFile(files[0])
 
-    println(fileNames)
+    val categorizer = EntryCategorizer();
+    val outSpendingEntries = ArrayList<SpendingEntry>()
+
+
+    for(statementEntry in statements){
+
+        val spendingEntry = categorizer.categorize(statementEntry) ?: continue;
+
+        val existing = outSpendingEntries.find { it.category == spendingEntry.category && it.subCategory == spendingEntry.subCategory }
+        if(existing != null) {
+            existing.amount += spendingEntry.amount
+        } else {
+            outSpendingEntries.add(spendingEntry)
+        }
+    }
+
+    outSpendingEntries.sortBy { it.category }
+
+    outSpendingEntries.forEach { println(it) }
 }
 
+class FileReader {
+
+    fun getDataFiles() : List<String> {
+
+        if(1==1)
+            return listOf("C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\seb.txt")
+
+        val dataPath = System.getProperty("data_folder")
+
+        return File(dataPath)
+                .walk()
+                .filter{it.name.startsWith("20")}
+                .map{it.absolutePath}
+                .toList()
+    }
+
+}
