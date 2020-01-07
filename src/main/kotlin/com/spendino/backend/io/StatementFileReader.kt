@@ -5,18 +5,13 @@ import java.io.File
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
+class StatementFileReader {
 
-fun main() {
-
-    println(StatementReader().parseFile("C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\card.txt", InputFileType.CARD))
-}
-
-class StatementReader {
-
-    fun parseFile(filePath: String, fileType: InputFileType): List<StatementEntry> {
+    fun parseFile(filePath: String, month : String, fileType: InputFileType): List<StatementEntry> {
 
         return File(filePath)
                 .readLines()
+                .filter { it.startsWith(month) }
                 .map { line -> if(fileType == InputFileType.CARD)  parseCardLine(line) else parseBankLine(line) }
                 .toList();
     }
