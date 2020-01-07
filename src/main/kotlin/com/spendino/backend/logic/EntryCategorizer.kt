@@ -3,12 +3,18 @@ package com.spendino.backend.logic
 import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
 
+
+
 class EntryCategorizer {
 
-    private val housingCat = "Bostad"
-    private val monthlyCat = "Fasta utgift"
-    private val oneTime = "oneTime"
-    private val base = "Base"
+    companion object {
+        const val categoryNeeded = "<needs classification>"
+
+        const val housingCat = "Bostad"
+        const val monthlyCat = "Fasta utgift"
+        const val oneTime = "One Time"
+        const val base = "Base"
+    }
 
     private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se")
 
@@ -50,7 +56,7 @@ class EntryCategorizer {
         if(description == "brf cyklisten") {
             return SpendingEntry(housingCat, "Hyra", -2618)
         } else if(description.startsWith("lån")) {
-            return SpendingEntry(housingCat, "Ränta", statementEntry.amount + 2618)
+            return SpendingEntry(housingCat, "Ränta", statementEntry.amount - 3125)
         }
 
         for((matchString, categories) in straightMatches) {
@@ -59,7 +65,7 @@ class EntryCategorizer {
             }
         }
 
-        return SpendingEntry("<needs classification>", statementEntry.description, statementEntry.amount)
+        return SpendingEntry(categoryNeeded, statementEntry.description, statementEntry.amount)
     }
 
 
