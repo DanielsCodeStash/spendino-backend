@@ -12,7 +12,7 @@ class EntryCategorizer {
 
         const val housingCat = "Bostad"
         const val monthlyCat = "Fasta utgift"
-        const val oneTime = "One Time"
+        const val oneTime = "One time"
         const val base = "Base"
     }
 
