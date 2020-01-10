@@ -13,7 +13,7 @@ fun main() {
     val cardFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\card.txt"
     val bankFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\bank.txt"
 
-    val outFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\out.txt"
+    val outFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\" + month.replace("-" , "") + ".json";
 
     val cardStatementEntries = StatementFileReader().parseFile(cardFile, month, InputFileType.CARD)
     val bankStatementEntries = StatementFileReader().parseFile(bankFile, month, InputFileType.BANK)
@@ -29,6 +29,7 @@ fun main() {
     println("Attention: These posts could not be categorized")
     enrichedEntries
             .filter { it.category == EntryCategorizer.categoryNeeded}
+            .sortedBy { it.date }
             .forEach { println(it) }
 
 }

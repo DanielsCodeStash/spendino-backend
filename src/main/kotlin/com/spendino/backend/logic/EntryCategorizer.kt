@@ -37,6 +37,7 @@ class EntryCategorizer {
             "willys" to Pair(base, "Mat och bas"),
             "ica nära" to Pair(base, "Mat och bas"),
             "ica nara" to Pair(base, "Mat och bas"),
+            "salong live" to Pair(base, "Klippning"),
             "ica supermarket" to Pair(base, "Mat och bas"),
             "sannegardens" to Pair(base, "Mat ute"),
             "systembolaget" to Pair(base, "Öl"),
@@ -48,24 +49,26 @@ class EntryCategorizer {
     fun categorize(statementEntry: StatementEntry) : SpendingEntry? {
 
         val description = statementEntry.description.trim().toLowerCase()
+        val date = statementEntry.date;
+
 
         if(ignore.any { description.contains(it) }) {
             return null
         }
 
         if(description == "brf cyklisten") {
-            return SpendingEntry(housingCat, "Hyra", -2618)
+            return SpendingEntry(date, housingCat, "Hyra", -2618)
         } else if(description.startsWith("lån")) {
-            return SpendingEntry(housingCat, "Ränta", statementEntry.amount - 3125)
+            return SpendingEntry(date, housingCat, "Ränta", statementEntry.amount + 3125)
         }
 
         for((matchString, categories) in straightMatches) {
             if(description.contains(matchString)) {
-                return SpendingEntry(categories.first, categories.second, statementEntry.amount)
+                return SpendingEntry(date, categories.first, categories.second, statementEntry.amount)
             }
         }
 
-        return SpendingEntry(categoryNeeded, statementEntry.description, statementEntry.amount)
+        return SpendingEntry(date, categoryNeeded, statementEntry.description, statementEntry.amount)
     }
 
 
