@@ -9,7 +9,7 @@ import com.spendino.backend.logic.StaticDataHandler
 
 fun main() {
 
-    val month = "2019-12"
+    val month = "2020-01"
     val cardFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\card.txt"
     val bankFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\bank.txt"
 

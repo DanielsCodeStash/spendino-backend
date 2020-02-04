@@ -37,9 +37,11 @@ class EntryCategorizer {
             "willys" to Pair(base, "Mat och bas"),
             "ica nära" to Pair(base, "Mat och bas"),
             "ica nara" to Pair(base, "Mat och bas"),
+            "rusta backaplan" to Pair(base, "Mat och bas"),
             "salong live" to Pair(base, "Klippning"),
             "ica supermarket" to Pair(base, "Mat och bas"),
             "sannegardens" to Pair(base, "Mat ute"),
+            "restaurang istanbul" to Pair(base, "Mat ute"),
             "systembolaget" to Pair(base, "Öl"),
             "sushi tiden" to Pair(base, "Mat ute")
 

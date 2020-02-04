@@ -1,0 +1,23 @@
+[
+	{ "g1": "Bostad", "g2": "EL", "value": 581 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2081 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 258 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 607 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 182 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 110 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 98 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 120 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 4771 },
+	{ "g1": "Base", "g2": "Öl", "value": 448 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 294 },
+	{ "g1": "Base", "g2": "Klippning", "value": 200 }
+
+]
