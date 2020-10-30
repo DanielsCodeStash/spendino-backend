@@ -16,13 +16,13 @@ class EntryCategorizer {
         const val base = "Base"
     }
 
-    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se")
+    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se", "Pension", "skandia liv", "56990473967")
 
     private val straightMatches = hashMapOf(
             "gbg energi" to Pair(housingCat, "EL"),
             "göteborg energi" to Pair(housingCat, "EL"),
             "csn" to Pair(monthlyCat, "CSN"),
-            "aea" to Pair(monthlyCat, "Akassa"),
+            "Akad.a-kassa" to Pair(monthlyCat, "Akassa"),
             "folksam" to Pair(monthlyCat, "Försäkring"),
             "frisktandv" to Pair(monthlyCat, "Tandvård"),
             "enkla vardag" to Pair(monthlyCat, "Bank"),
@@ -39,11 +39,22 @@ class EntryCategorizer {
             "ica nara" to Pair(base, "Mat och bas"),
             "rusta backaplan" to Pair(base, "Mat och bas"),
             "salong live" to Pair(base, "Klippning"),
+            "Live Salong" to Pair(base, "Klippning"),
             "ica supermarket" to Pair(base, "Mat och bas"),
             "sannegardens" to Pair(base, "Mat ute"),
             "restaurang istanbul" to Pair(base, "Mat ute"),
             "systembolaget" to Pair(base, "Öl"),
-            "sushi tiden" to Pair(base, "Mat ute")
+            "sushi tiden" to Pair(base, "Mat ute"),
+            "DA BELLO ENOTECA" to Pair(base, "Mat ute"),
+            "GOOGLE STORAGE" to Pair(monthlyCat, "Streaming"),
+            "Dplay" to Pair(monthlyCat, "Streaming"),
+            "FOOD LAB" to Pair(base, "Mat ute"),
+            "SCHNITZELPLATZ" to Pair(base, "Öl"),
+            "Kafe Alkemiste" to Pair(base, "Mat ute"),
+            "ZAMENHOF" to Pair(base, "Öl"),
+            "GYMGROSSISTEN" to Pair(base, "Gym"),
+            "FILMSTADEN" to Pair(oneTime, "Bio")
+
 
     )
 
@@ -54,7 +65,7 @@ class EntryCategorizer {
         val date = statementEntry.date;
 
 
-        if(ignore.any { description.contains(it) }) {
+        if(ignore.any { description.contains(it, true) }) {
             return null
         }
 
@@ -65,7 +76,7 @@ class EntryCategorizer {
         }
 
         for((matchString, categories) in straightMatches) {
-            if(description.contains(matchString)) {
+            if(description.contains(matchString, true)) {
                 return SpendingEntry(date, categories.first, categories.second, statementEntry.amount)
             }
         }

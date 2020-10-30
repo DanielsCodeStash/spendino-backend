@@ -9,11 +9,11 @@ import com.spendino.backend.logic.StaticDataHandler
 
 fun main() {
 
-    val month = "2020-01"
-    val cardFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\card.txt"
-    val bankFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\bank.txt"
+    val month = "2020-10"
+    val cardFile = "C:\\Daniel\\projects\\spendino-backend\\backend_data\\card.txt"
+    val bankFile = "C:\\Daniel\\projects\\spendino-backend\\backend_data\\bank.txt"
 
-    val outFile = "C:\\Daniel\\other_projects\\spendino-backend\\backend_data\\" + month.replace("-" , "") + ".json";
+    val outFile = "C:\\Daniel\\projects\\spendino-backend\\backend_data\\" + month.replace("-" , "") + ".json";
 
     val cardStatementEntries = StatementFileReader().parseFile(cardFile, month, InputFileType.CARD)
     val bankStatementEntries = StatementFileReader().parseFile(bankFile, month, InputFileType.BANK)

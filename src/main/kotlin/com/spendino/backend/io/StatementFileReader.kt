@@ -18,7 +18,7 @@ class StatementFileReader {
 
     private fun parseBankLine(line: String): StatementEntry {
 
-        val cols = line.split("\t")
+        val cols = line.replace("\t\t", "\t").split("\t")
 
         val date = LocalDate.parse(cols[0].trim(), DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 
@@ -32,7 +32,7 @@ class StatementFileReader {
 
     private fun parseCardLine(line: String): StatementEntry {
 
-        val cols = line.split("\t")
+        val cols = line.replace("\t\t", "\t").split("\t")
 
         val date = LocalDate.parse(cols[0].trim(), DateTimeFormatter.ofPattern("yyyy-MM-dd"))
         val amount = parseCurrencyInput(cols[4])
