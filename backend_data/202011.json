@@ -1,0 +1,29 @@
+[
+	{ "g1": "Bostad", "g2": "EL", "value": 518 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2045 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 336 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 607 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 185 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 140 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 98 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 476 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 2825 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 343 },
+	{ "g1": "Base", "g2": "Öl", "value": 1 },
+
+
+	{ "g1": "One time", "g2": "Flyg Amsterdam", "value": 1610 },
+	{ "g1": "One time", "g2": "Körkort", "value": 4340 },
+	{ "g1": "One time", "g2": "Gymgrossisten", "value": 654 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 8100 }
+
+]
