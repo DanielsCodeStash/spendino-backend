@@ -53,7 +53,13 @@ class EntryCategorizer {
             "Kafe Alkemiste" to Pair(base, "Mat ute"),
             "ZAMENHOF" to Pair(base, "Öl"),
             "GYMGROSSISTEN" to Pair(base, "Gym"),
-            "FILMSTADEN" to Pair(oneTime, "Bio")
+            "FILMSTADEN" to Pair(oneTime, "Bio"),
+            "INDISKA" to Pair(base, "Mat ute"),
+            "Apotek" to Pair(base, "Mat och bas"),
+            "apohem" to Pair(base, "Mat och bas"),
+            "GOTEBORGS ORIEN" to Pair(base, "Mat och bas")
+
+
 
 
     )
