@@ -21,6 +21,7 @@ class EntryCategorizer {
     private val straightMatches = hashMapOf(
             "gbg energi" to Pair(housingCat, "EL"),
             "göteborg energi" to Pair(housingCat, "EL"),
+            "dinel" to Pair(housingCat, "EL"),
             "csn" to Pair(monthlyCat, "CSN"),
             "Akad.a-kassa" to Pair(monthlyCat, "Akassa"),
             "folksam" to Pair(monthlyCat, "Försäkring"),
@@ -57,9 +58,8 @@ class EntryCategorizer {
             "INDISKA" to Pair(base, "Mat ute"),
             "Apotek" to Pair(base, "Mat och bas"),
             "apohem" to Pair(base, "Mat och bas"),
-            "GOTEBORGS ORIEN" to Pair(base, "Mat och bas")
-
-
+            "GOTEBORGS ORIEN" to Pair(base, "Mat och bas"),
+            "ZOZAKI JAPAN" to Pair(base, "Mat ute")
 
 
     )
