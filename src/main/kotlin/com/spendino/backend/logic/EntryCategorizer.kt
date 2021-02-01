@@ -48,7 +48,7 @@ class EntryCategorizer {
             "sushi tiden" to Pair(base, "Mat ute"),
             "DA BELLO ENOTECA" to Pair(base, "Mat ute"),
             "GOOGLE STORAGE" to Pair(monthlyCat, "Streaming"),
-            "Dplay" to Pair(monthlyCat, "Streaming"),
+            "discovery+" to Pair(monthlyCat, "Streaming"),
             "FOOD LAB" to Pair(base, "Mat ute"),
             "SCHNITZELPLATZ" to Pair(base, "Öl"),
             "Kafe Alkemiste" to Pair(base, "Mat ute"),
