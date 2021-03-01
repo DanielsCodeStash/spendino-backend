@@ -41,6 +41,7 @@ class EntryCategorizer {
             "rusta backaplan" to Pair(base, "Mat och bas"),
             "salong live" to Pair(base, "Klippning"),
             "Live Salong" to Pair(base, "Klippning"),
+            "Barbersh" to Pair(base, "Klippning"),
             "ica supermarket" to Pair(base, "Mat och bas"),
             "sannegardens" to Pair(base, "Mat ute"),
             "restaurang istanbul" to Pair(base, "Mat ute"),
@@ -58,6 +59,7 @@ class EntryCategorizer {
             "INDISKA" to Pair(base, "Mat ute"),
             "Apotek" to Pair(base, "Mat och bas"),
             "apohem" to Pair(base, "Mat och bas"),
+            "Apotea" to Pair(base, "Mat och bas"),
             "GOTEBORGS ORIEN" to Pair(base, "Mat och bas"),
             "ZOZAKI JAPAN" to Pair(base, "Mat ute")
 
