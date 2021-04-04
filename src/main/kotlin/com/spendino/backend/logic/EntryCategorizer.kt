@@ -61,7 +61,10 @@ class EntryCategorizer {
             "apohem" to Pair(base, "Mat och bas"),
             "Apotea" to Pair(base, "Mat och bas"),
             "GOTEBORGS ORIEN" to Pair(base, "Mat och bas"),
-            "ZOZAKI JAPAN" to Pair(base, "Mat ute")
+            "ZOZAKI JAPAN" to Pair(base, "Mat ute"),
+            "BURGER KING" to Pair(base, "Mat ute"),
+            "SUBWAY" to Pair(base, "Mat ute")
+
 
 
     )
