@@ -2,6 +2,8 @@ package com.spendino.backend.io
 
 import com.spendino.backend.data.StatementEntry
 import java.io.File
+import java.lang.Exception
+import java.lang.RuntimeException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -32,12 +34,17 @@ class StatementFileReader {
 
     private fun parseCardLine(line: String): StatementEntry {
 
-        val cols = line.replace("\t\t", "\t").split("\t")
+        try {
 
-        val date = LocalDate.parse(cols[0].trim(), DateTimeFormatter.ofPattern("yyyy-MM-dd"))
-        val amount = parseCurrencyInput(cols[4])
+            val cols = line.replace("\t\t", "\t").split("\t")
 
-        return StatementEntry(date, cols[1], amount);
+            val date = LocalDate.parse(cols[0].trim(), DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+            val amount = if(cols.size < 5) parseCurrencyInput(cols[3]) else parseCurrencyInput(cols[4])
+            return StatementEntry(date, cols[1], amount)
+
+        } catch (ex: Exception) {
+            throw RuntimeException("Error reading card line: $line")
+        }
     }
 
     private fun parseCurrencyInput(input : String) : Int {
