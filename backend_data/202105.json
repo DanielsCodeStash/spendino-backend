@@ -1,0 +1,32 @@
+[
+	{ "g1": "Bostad", "g2": "EL", "value": 185 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2023 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 316 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 618 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 191 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 140 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 123 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 340 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 4599 },
+	{ "g1": "Base", "g2": "Gym", "value": 716 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 2208 },
+	{ "g1": "Base", "g2": "Öl", "value": 79 },
+
+	{ "g1": "One time", "g2": "Steam spel", "value": 414 },
+	{ "g1": "One time", "g2": "Kläder - byxor o tshirt", "value": 1049 },
+	{ "g1": "One time", "g2": "Resa - hostel", "value": 982 },
+	{ "g1": "One time", "g2": "Resa - buss och tunnelbana", "value": 300 },
+	{ "g1": "One time", "g2": "Resa - covidtest", "value": 2090 },
+	{ "g1": "One time", "g2": "Trådlös mus", "value": 640 },
+	{ "g1": "One time", "g2": "Tomatplantgrejer", "value": 330 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 10600 }
+]

@@ -1,0 +1,27 @@
+[
+	{ "g1": "Bostad", "g2": "EL", "value": 647 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2013 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 316 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 618 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 193 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 140 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 123 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 102 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 1732 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 159 },
+
+	{ "g1": "One time", "g2": "Resa - resurant", "value": 3311 },
+	{ "g1": "One time", "g2": "Resa - museum + tours", "value": 1340 },
+	{ "g1": "One time", "g2": "Resa - ovrigt ", "value": 6338 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 9300 }
+
+]

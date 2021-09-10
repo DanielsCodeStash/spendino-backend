@@ -16,7 +16,7 @@ class EntryCategorizer {
         const val base = "Base"
     }
 
-    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens.se", "Pension", "skandia liv", "56990473967")
+    private val ignore = hashSetOf("entercard group ab", "lön", "inbetalning bankgiro", "netlens", "Pension", "skandia liv", "56990473967")
 
     private val straightMatches = hashMapOf(
             "gbg energi" to Pair(housingCat, "EL"),
@@ -61,11 +61,21 @@ class EntryCategorizer {
             "apohem" to Pair(base, "Mat och bas"),
             "Apotea" to Pair(base, "Mat och bas"),
             "HELLOFRESH" to Pair(base, "Mat och bas"),
+            "ICA KVANTUM" to Pair(base, "Mat och bas"),
+            "COOP KONSUM" to Pair(base, "Mat och bas"),
             "GOTEBORGS ORIEN" to Pair(base, "Mat och bas"),
             "ZOZAKI JAPAN" to Pair(base, "Mat ute"),
             "BURGER KING" to Pair(base, "Mat ute"),
             "SUBWAY" to Pair(base, "Mat ute"),
-            "FLYING BARELL" to Pair(base, "Mat ute")
+            "FLYING BARELL" to Pair(base, "Mat ute"),
+            "MEXIKANSKA MONARKIN" to Pair(base, "Mat ute"),
+            "OLSTUGAN TULLEN" to Pair(base, "Mat ute"),
+            "GLADE JOHANS" to Pair(base, "Mat och bas"),
+            "LIDL" to Pair(base, "Mat och bas"),
+            "eleven" to Pair(base, "Mat och bas"),
+            "LILLA ISTANBUL" to Pair(base, "Mat ute")
+
+
 
 
 

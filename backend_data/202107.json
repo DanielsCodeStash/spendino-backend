@@ -1,0 +1,26 @@
+[
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2016 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 316 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 618 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 191 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 140 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 123 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 136 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 4223 },
+	{ "g1": "Base", "g2": "Klippning", "value": 199 },
+	{ "g1": "Base", "g2": "Öl", "value": 44 },
+
+	{ "g1": "One time", "g2": "Resa - flygbuss", "value": 249 },
+	{ "g1": "One time", "g2": "Körkort", "value": 6695 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 14000 }
+
+]

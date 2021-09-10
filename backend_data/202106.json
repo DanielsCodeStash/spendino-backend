@@ -1,0 +1,30 @@
+[
+	{ "g1": "Bostad", "g2": "EL", "value": 408 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2020 },
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 316 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 99 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 618 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 193 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 140 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 123 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 170 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 3532 },
+	{ "g1": "Base", "g2": "Gym", "value": 824 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 99 },
+	{ "g1": "Base", "g2": "Klippning", "value": 200 },
+
+	{ "g1": "One time", "g2": "Körkort", "value": 4150 },
+	{ "g1": "One time", "g2": "Tandläkare kontroll", "value": 918 },
+	{ "g1": "One time", "g2": "Resa - flyg Amsterdam", "value": 1852 },
+	{ "g1": "One time", "g2": "Resa - tåg Paris", "value": 1850 },
+	{ "g1": "One time", "g2": "Resa - airbnb Paris", "value": 1850 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 11300 }
+]
