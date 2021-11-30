@@ -73,7 +73,16 @@ class EntryCategorizer {
             "GLADE JOHANS" to Pair(base, "Mat och bas"),
             "LIDL" to Pair(base, "Mat och bas"),
             "eleven" to Pair(base, "Mat och bas"),
-            "LILLA ISTANBUL" to Pair(base, "Mat ute")
+            "LILLA ISTANBUL" to Pair(base, "Mat ute"),
+            "NADIAS RESTAURANG I GA" to Pair(base, "Mat ute"),
+            "IRISH EMBASSY JERNTORG" to Pair(base, "öl"),
+            "Ramen-ya" to Pair(base, "Mat ute"),
+            "Streetfood f" to Pair(base, "Mat ute"),
+            "CO 252 BACKAPLA" to Pair(base, "Mat och bas"),
+            "coop" to Pair(base, "Mat och bas"),
+            "Systembolage" to Pair(base, "Öl"),
+            "hbomax" to Pair(monthlyCat, "Streaming")
+
 
 
 
@@ -92,7 +101,7 @@ class EntryCategorizer {
             return null
         }
 
-        if(description == "brf cyklisten") {
+        if(description == "cyklisten") {
             return SpendingEntry(date, housingCat, "Hyra", -2618)
         } else if(description.startsWith("lån")) {
             return SpendingEntry(date, housingCat, "Ränta", statementEntry.amount + 3125)

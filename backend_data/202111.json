@@ -1,0 +1,36 @@
+[
+	{ "g1": "Bostad", "g2": "Hyra", "value": 2618 },
+	{ "g1": "Bostad", "g2": "EL", "value": 786 },
+	{ "g1": "Bostad", "g2": "Ränta", "value": 2002 },
+	{ "g1": "Bostad", "g2": "Amortering", "value": 3125 },
+	{ "g1": "Bostad", "g2": "Vatten", "value": 200 },
+
+	{ "g1": "Fasta utgift", "g2": "Streaming", "value": 296 },
+	{ "g1": "Fasta utgift", "g2": "Telefon", "value": 116 },
+	{ "g1": "Fasta utgift", "g2": "CSN", "value": 618 },
+	{ "g1": "Fasta utgift", "g2": "Försäkring", "value": 190 },
+	{ "g1": "Fasta utgift", "g2": "Bank", "value": 35 },
+	{ "g1": "Fasta utgift", "g2": "Akassa", "value": 130 },
+	{ "g1": "Fasta utgift", "g2": "Tandvård", "value": 123 },
+	{ "g1": "Fasta utgift", "g2": "Västtrafik", "value": 427 },
+	{ "g1": "Fasta utgift", "g2": "Linser", "value": 350 },
+
+	{ "g1": "Base", "g2": "Mat och bas", "value": 8900 },
+	{ "g1": "Base", "g2": "Gym", "value": 492 },
+	{ "g1": "Base", "g2": "Mat ute", "value": 153 },
+	{ "g1": "Base", "g2": "Öl", "value": 528 },
+
+	{ "g1": "One time", "g2": "Coffe maker", "value": 347 },
+	{ "g1": "One time", "g2": "L - Nordic wellness", "value": 1087 },
+	{ "g1": "One time", "g2": "IKEA", "value": 2104 },
+	{ "g1": "One time", "g2": "Resa Kramfors", "value": 4315 },
+	{ "g1": "One time", "g2": "L - jacka", "value": 1299 },
+	{ "g1": "One time", "g2": "Shoe shelf", "value": 300 },
+	{ "g1": "One time", "g2": "Cast iron pan", "value": 599 },
+	{ "g1": "One time", "g2": "L - västtrafik kort", "value": 599 },
+	{ "g1": "One time", "g2": "Fitbit", "value": 1490 },
+	{ "g1": "One time", "g2": "L - skor, vantar, mössa", "value": 822 },
+
+	{ "g1": "Sparande", "g2": "Sparande", "value": 2000 }
+
+]
