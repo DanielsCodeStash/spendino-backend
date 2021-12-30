@@ -81,20 +81,24 @@ class EntryCategorizer {
             "CO 252 BACKAPLA" to Pair(base, "Mat och bas"),
             "coop" to Pair(base, "Mat och bas"),
             "Systembolage" to Pair(base, "Öl"),
-            "hbomax" to Pair(monthlyCat, "Streaming")
-
-
-
-
+            "hbomax" to Pair(monthlyCat, "Streaming"),
+            "MOON THAI KITCHEN" to Pair(base, "Mat ute"),
+            "Dubbel Gard" to Pair(base, "Mat ute"),
+            "Hemköp" to Pair(base, "Mat och bas"),
+            "SYLOS" to Pair(base, "Mat ute"),
+            "Saigon city" to Pair(base, "Mat och bas"),
+            "Indian groc" to Pair(base, "Mat och bas"),
+            "VASTTRAFIK" to Pair(monthlyCat, "Västtrafik"),
+            "FLYGBUSSARNA" to Pair(monthlyCat, "Västtrafik")
 
 
     )
 
 
-    fun categorize(statementEntry: StatementEntry) : SpendingEntry? {
+    fun categorize(statementEntry: StatementEntry): SpendingEntry? {
 
         val description = statementEntry.description.trim().toLowerCase()
-        val date = statementEntry.date;
+        val date = statementEntry.date
 
 
         if(ignore.any { description.contains(it, true) }) {

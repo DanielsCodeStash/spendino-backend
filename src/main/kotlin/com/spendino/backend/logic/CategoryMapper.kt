@@ -14,7 +14,7 @@ class CategoryMapper {
 
         for(statementEntry in statementEntries) {
 
-            val spendingEntry = categorizer.categorize(statementEntry) ?: continue;
+            val spendingEntry = categorizer.categorize(statementEntry) ?: continue
             val subCategoryOnlyNumbers = statementEntry.description.trim().chars().allMatch(Character::isDigit)
 
             val existing = outSpendingEntries.find { it.category == spendingEntry.category && it.subCategory == spendingEntry.subCategory }

@@ -1,31 +1,32 @@
 package com.spendino.backend
 
-import com.spendino.backend.io.InputFileType
 import com.spendino.backend.io.JsonOutputHandler
-import com.spendino.backend.io.StatementFileReader
+import com.spendino.backend.io.parseStatementFile
 import com.spendino.backend.logic.CategoryMapper
 import com.spendino.backend.logic.EntryCategorizer
 import com.spendino.backend.logic.StaticDataHandler
 
 fun main() {
 
-    val month = "2021-11"
-    val cardFile = "C:\\Projects\\spendino-backend\\backend_data\\card.txt"
-    val bankFile = "C:\\Projects\\spendino-backend\\backend_data\\bank.txt"
+    val month = "2021-12"
+    val pathPrefix = "C:\\Daniel\\projects\\spendino-backend\\backend_data\\"
 
-    val outFile = "C:\\Projects\\spendino-backend\\backend_data\\" + month.replace("-" , "") + ".json";
+    val cardFile = pathPrefix + "card.txt"
+    val bankFile = pathPrefix + "bank.txt"
+    val jsonFile = pathPrefix + month.replace("-" , "") + ".json";
+    val categoryFile = pathPrefix + month.replace("-" , "") + "_raw.txt";
 
-    val cardStatementEntries = StatementFileReader().parseFile(cardFile, month, InputFileType.CARD)
-    val bankStatementEntries = StatementFileReader().parseFile(bankFile, month, InputFileType.BANK)
+    val cardStatementEntries = parseStatementFile(cardFile, month)
+    val bankStatementEntries = parseStatementFile(bankFile, month)
     val statementEntries = cardStatementEntries + bankStatementEntries
 
     val spendingEntries = CategoryMapper().map(statementEntries)
-
     val enrichedEntries = StaticDataHandler().staticDataModify(spendingEntries)
 
-    JsonOutputHandler().writeJson(enrichedEntries, outFile)
+    JsonOutputHandler().writeJson(enrichedEntries, jsonFile)
 
-    println("Output file written to $outFile")
+    println("JSON file written to $jsonFile")
+    println("Raw category file written to $categoryFile")
     println("Attention: These posts could not be categorized")
     enrichedEntries
             .filter { it.category == EntryCategorizer.categoryNeeded}
