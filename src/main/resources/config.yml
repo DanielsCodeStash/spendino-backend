@@ -1,0 +1,106 @@
+categories:
+  Base:
+    "[Mat och bas]":
+      - ica nära
+      - willys
+      - coop
+      - rusta backaplan
+      - ica supermarket
+      - Apotek
+      - apohem
+      - Apotea
+      - HELLOFRESH
+      - ICA KVANTUM
+      - GOTEBORGS ORIEN
+      - GLADE JOHANS
+      - LIDL
+      - eleven
+      - CO 252 BACKAPLA
+      - Hemköp
+      - Saigon city
+      - Indian groc
+
+    "[Mat ute]":
+      - lilla istanbul
+      - zosaki
+      - sannegardens
+      - restaurang istanbul
+      - sushi tiden
+      - DA BELLO ENOTECA
+      - FOOD LAB
+      - Kafe Alkemiste
+      - INDISKA
+      - COOP KONSUM
+      - ZOZAKI JAPAN
+      - BURGER KING
+      - SUBWAY
+      - FLYING BARELL
+      - MEXIKANSKA MONARKIN
+      - OLSTUGAN TULLEN
+      - LILLA ISTANBUL
+      - NADIAS RESTAURANG
+      - Ramen-ya
+      - Streetfood f
+      - MOON THAI KITCHEN
+      - Dubbel Gard
+      - SYLOS
+
+    Klippning:
+      - Live Salong
+      - Barbersh
+
+    Öl:
+      - systembolaget
+      - SCHNITZELPLATZ
+      - ZAMENHOF
+      - IRISH EMBASSY JERNTORG
+      - Systembolage
+
+    Gym:
+      - GYMGROSSISTEN
+
+  Bostad:
+    EL:
+      - gbg energi
+      - göteborg energi
+      - dinel
+
+  "[Fasta utgift]":
+    CSN:
+      - csn
+    Akassa:
+      - Akad.a-kassa
+    Försäkring:
+      - folksam
+    Tandvård:
+      - frisktandv
+    Bank:
+      - enkla vardag
+    Västtrafik:
+      - västtrafik
+      - vasttrafik
+      - FLYGBUSSARNA
+    Telefon:
+      - hallon.se
+    Streaming:
+      - spotify
+      - netflix.com
+      - hbomax
+      - audible
+      - GOOGLE STORAGE
+      - discovery+
+
+  "[One time]":
+    Datorspel:
+      - STEAMGAMES
+    Bio:
+      - FILMSTADEN
+
+ignored:
+  - entercard group ab
+  - lön
+  - inbetalning bankgiro
+  - netlens
+  - Pension
+  - skandia liv
+  - 56990473967

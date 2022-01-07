@@ -1,14 +1,18 @@
 package com.spendino.backend.logic
 
+import com.spendino.backend.data.GeneratorConfig
 import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
+import org.springframework.stereotype.Component
 
-class CategoryMapper {
 
+@Component
+class CategoryMapper(
+    val categorizer: EntryCategorizer
+)  {
 
     fun map(statementEntries : List<StatementEntry>) : List<SpendingEntry> {
 
-        val categorizer = EntryCategorizer();
         val outSpendingEntries = ArrayList<SpendingEntry>()
         val logCategoryToStatementEntry = HashMap<String, MutableList<StatementEntry>>()
 
