@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource
 
 @Configuration
 @ConfigurationProperties
-@PropertySource(value = ["classpath:config.yml"], factory = YamlPropertyFactory::class, encoding = "UTF-8")
+@PropertySource(value = ["classpath:config.yml"], encoding = "UTF-8", factory = YamlPropertyFactory::class)
 class GeneratorConfig {
     lateinit var categories: Map<String, Map<String, List<String>>>
     lateinit var ignored: List<String>

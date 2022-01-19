@@ -1,59 +1,34 @@
 package com.spendino.backend.logic
 
-import com.spendino.backend.data.GeneratorConfig
+import com.spendino.backend.data.Category
+import com.spendino.backend.data.SpendingData
 import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
 import org.springframework.stereotype.Component
 
-
 @Component
+// TODO: Fix naming of everything
 class CategoryMapper(
     val categorizer: EntryCategorizer
 )  {
 
-    fun map(statementEntries : List<StatementEntry>) : List<SpendingEntry> {
+    fun categorize(statementEntries: List<StatementEntry>): SpendingData {
 
-        val outSpendingEntries = ArrayList<SpendingEntry>()
-        val logCategoryToStatementEntry = HashMap<String, MutableList<StatementEntry>>()
+        val spendingData = SpendingData()
 
-        for(statementEntry in statementEntries) {
+        statementEntries.forEach{categorize(it, spendingData)}
 
-            val spendingEntry = categorizer.categorize(statementEntry) ?: continue
-            val subCategoryOnlyNumbers = statementEntry.description.trim().chars().allMatch(Character::isDigit)
+        return spendingData
+    }
 
-            val existing = outSpendingEntries.find { it.category == spendingEntry.category && it.subCategory == spendingEntry.subCategory }
+    fun categorize(entry: StatementEntry, spendingData: SpendingData) {
+        val categories = categorizer.categorize(entry) ?: return
+        val spending = SpendingEntry(entry.date, entry.description, entry.amount)
 
-            val logKey = spendingEntry.category + " -> " + spendingEntry.subCategory
-
-            if(existing != null && !subCategoryOnlyNumbers) { // for swish and bank transfer we don't want to combine posts
-                existing.amount += spendingEntry.amount
-
-                logCategoryToStatementEntry[logKey]!!.add(statementEntry)
-            } else {
-                outSpendingEntries.add(spendingEntry)
-                logCategoryToStatementEntry[logKey] = ArrayList()
-                logCategoryToStatementEntry[logKey]!!.add(statementEntry)
-            }
+        if(categories.category == EntryCategorizer.categoryNeeded) {
+            spendingData.uncategorized.add(spending)
+        } else {
+            spendingData.addSpending(spending, categories.category, categories.subCategory)
         }
-
-        outSpendingEntries.sortBy { it.category }
-
-
-        logCategoryToStatementEntry
-                .filterKeys { k -> !k.startsWith("<needs classification>") }
-                .forEach { (s, mutableList) ->
-                    println(s)
-                    mutableList
-                            .sortBy { it.date };
-
-                    mutableList
-                            .forEach {
-                                println(" " + it.date + " " + it.description + "\t" + it.amount)
-                            }
-                }
-
-
-
-        return outSpendingEntries;
     }
 }

@@ -49,7 +49,7 @@ categories:
       - Live Salong
       - Barbersh
 
-    Öl:
+    "[Öl]":
       - systembolaget
       - SCHNITZELPLATZ
       - ZAMENHOF
@@ -70,13 +70,13 @@ categories:
       - csn
     Akassa:
       - Akad.a-kassa
-    Försäkring:
+    "[Försäkring]":
       - folksam
-    Tandvård:
+    "[Tandvård]":
       - frisktandv
     Bank:
       - enkla vardag
-    Västtrafik:
+    "[Västtrafik]":
       - västtrafik
       - vasttrafik
       - FLYGBUSSARNA
@@ -104,3 +104,6 @@ ignored:
   - Pension
   - skandia liv
   - 56990473967
+
+static-added:
+  -

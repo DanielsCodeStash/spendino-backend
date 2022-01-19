@@ -18,7 +18,7 @@ class SpendinoGenerator(
     override fun run(vararg args: String?) {
 
         val month = "2021-12"
-        val pathPrefix = "C:\\Daniel\\projects\\spendino-backend\\backend_data\\"
+        val pathPrefix = "C:\\Projects\\spendino-backend\\backend_data\\"
 
         val cardFile = pathPrefix + "card.txt"
         val bankFile = pathPrefix + "bank.txt"
@@ -29,18 +29,24 @@ class SpendinoGenerator(
         val bankStatementEntries = parseStatementFile(bankFile, month)
         val statementEntries = cardStatementEntries + bankStatementEntries
 
-        val spendingEntries = categoryMapper.map(statementEntries)
-        val enrichedEntries = StaticDataHandler().staticDataModify(spendingEntries)
 
-        JsonOutputHandler().writeJson(enrichedEntries, jsonFile)
+        val spend = categoryMapper.categorize(statementEntries)
+        StaticDataHandler().applyStaticModifications(spend)
 
-        println("JSON file written to $jsonFile")
-        println("Raw category file written to $categoryFile")
-        println("Attention: These posts could not be categorized")
-        enrichedEntries
-            .filter { it.category == EntryCategorizer.categoryNeeded}
-            .sortedBy { it.date }
-            .forEach { println(it) }
+
+        println("hej")
+//        val spendingEntries = categoryMapper.map(statementEntries)
+//        val enrichedEntries = StaticDataHandler().staticDataModify(spendingEntries)
+//
+//        JsonOutputHandler().writeJson(enrichedEntries, jsonFile)
+//
+//        println("JSON file written to $jsonFile")
+//        println("Raw category file written to $categoryFile")
+//        println("Attention: These posts could not be categorized")
+//        enrichedEntries
+//            .filter { it.category == EntryCategorizer.categoryNeeded}
+//            .sortedBy { it.date }
+//            .forEach { println(it) }
 
     }
 }
