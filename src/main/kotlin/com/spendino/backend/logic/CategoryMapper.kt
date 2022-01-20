@@ -2,7 +2,6 @@ package com.spendino.backend.logic
 
 import com.spendino.backend.data.Category
 import com.spendino.backend.data.SpendingData
-import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
 import org.springframework.stereotype.Component
 
@@ -23,7 +22,7 @@ class CategoryMapper(
 
     fun categorize(entry: StatementEntry, spendingData: SpendingData) {
         val categories = categorizer.categorize(entry) ?: return
-        val spending = SpendingEntry(entry.date, entry.description, entry.amount)
+        val spending = StatementEntry(entry.date, entry.description, entry.amount)
 
         if(categories.category == EntryCategorizer.categoryNeeded) {
             spendingData.uncategorized.add(spending)

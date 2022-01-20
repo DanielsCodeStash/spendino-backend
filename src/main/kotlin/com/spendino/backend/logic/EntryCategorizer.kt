@@ -1,7 +1,6 @@
 package com.spendino.backend.logic
 
 import com.spendino.backend.data.GeneratorConfig
-import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.data.StatementEntry
 import com.spendino.backend.data.SubCategory
 import org.springframework.stereotype.Component

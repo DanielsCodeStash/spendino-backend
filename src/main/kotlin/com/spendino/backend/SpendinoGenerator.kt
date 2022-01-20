@@ -18,7 +18,7 @@ class SpendinoGenerator(
     override fun run(vararg args: String?) {
 
         val month = "2021-12"
-        val pathPrefix = "C:\\Projects\\spendino-backend\\backend_data\\"
+        val pathPrefix = "C:\\Daniel\\Projects\\spendino-backend\\backend_data\\"
 
         val cardFile = pathPrefix + "card.txt"
         val bankFile = pathPrefix + "bank.txt"
@@ -34,7 +34,7 @@ class SpendinoGenerator(
         StaticDataHandler().applyStaticModifications(spend)
 
 
-        println("hej")
+        println(spend)
 //        val spendingEntries = categoryMapper.map(statementEntries)
 //        val enrichedEntries = StaticDataHandler().staticDataModify(spendingEntries)
 //

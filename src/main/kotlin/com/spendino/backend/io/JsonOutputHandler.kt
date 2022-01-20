@@ -1,6 +1,5 @@
 package com.spendino.backend.io
 
-import com.spendino.backend.data.SpendingEntry
 import com.spendino.backend.logic.EntryCategorizer
 import java.io.File
 

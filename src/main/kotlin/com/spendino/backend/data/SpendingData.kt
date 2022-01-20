@@ -1,11 +1,11 @@
 package com.spendino.backend.data
 
 data class SpendingData(
-    val uncategorized: MutableList<SpendingEntry> = mutableListOf(),
+    val uncategorized: MutableList<StatementEntry> = mutableListOf(),
     val categories: MutableList<Category> = mutableListOf(),
-    var totalSpent: Int = 0
+    var moneyChange: Int = 0
 ) {
-    fun addSpending(spendingEntry: SpendingEntry, categoryName: String, subCategoryName: String) {
+    fun addSpending(spendingEntry: StatementEntry, categoryName: String, subCategoryName: String) {
 
         val categoryExists = categories.any { it.name == categoryName }
         if(!categoryExists) {
@@ -13,8 +13,17 @@ data class SpendingData(
         }
         val category = categories.first { it.name == categoryName }
 
-        totalSpent += spendingEntry.amount
+        moneyChange += spendingEntry.amount
         category.addSpending(spendingEntry, subCategoryName)
+    }
+
+
+    override fun toString(): String {
+        var out = "> Spending data $moneyChange kr\n"
+        categories.forEach { out += it.toString(0) + "\n"}
+        out += "\n> Unclassified\n"
+        uncategorized.forEach { out += it.toString(0) + "\n" }
+        return out
     }
 
 }
