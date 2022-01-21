@@ -17,6 +17,9 @@ data class SpendingData(
         category.addSpending(spendingEntry, subCategoryName)
     }
 
+    fun getCategory(name: String): Category {
+        return categories.first { it.name == name }
+    }
 
     override fun toString(): String {
         var out = "> Spending data $moneyChange kr\n"

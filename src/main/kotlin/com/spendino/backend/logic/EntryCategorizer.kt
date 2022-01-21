@@ -40,7 +40,7 @@ class EntryCategorizer(
         return Categories(categoryNeeded, statementEntry.description)
     }
 
-    fun searchMatchingCategory(description: String, date: LocalDate, amount: Int): Categories? {
+    private fun searchMatchingCategory(description: String, date: LocalDate, amount: Int): Categories? {
 
         config.categories.forEach { (categoryName, subCategory) ->
             subCategory.forEach { (subCategoryName, statementDescriptions) ->

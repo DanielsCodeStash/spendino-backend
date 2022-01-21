@@ -3,12 +3,9 @@ package com.spendino.backend
 import com.spendino.backend.io.JsonOutputHandler
 import com.spendino.backend.io.parseStatementFile
 import com.spendino.backend.logic.CategoryMapper
-import com.spendino.backend.logic.EntryCategorizer
-import com.spendino.backend.logic.StaticDataHandler
-import com.spendino.backend.data.GeneratorConfig
+import com.spendino.backend.logic.applyStaticModifications
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component
-
 
 @Component
 class SpendinoGenerator(
@@ -25,28 +22,18 @@ class SpendinoGenerator(
         val jsonFile = pathPrefix + month.replace("-" , "") + ".json";
         val categoryFile = pathPrefix + month.replace("-" , "") + "_raw.txt";
 
-        val cardStatementEntries = parseStatementFile(cardFile, month)
-        val bankStatementEntries = parseStatementFile(bankFile, month)
-        val statementEntries = cardStatementEntries + bankStatementEntries
+        val cardData = parseStatementFile(cardFile, month)
+        val bankData = parseStatementFile(bankFile, month)
 
+        val spending = categoryMapper.categorize(cardData + bankData)
+        applyStaticModifications(spending)
 
-        val spend = categoryMapper.categorize(statementEntries)
-        StaticDataHandler().applyStaticModifications(spend)
+        JsonOutputHandler().writeJson(spending, jsonFile)
 
-
-        println(spend)
-//        val spendingEntries = categoryMapper.map(statementEntries)
-//        val enrichedEntries = StaticDataHandler().staticDataModify(spendingEntries)
-//
-//        JsonOutputHandler().writeJson(enrichedEntries, jsonFile)
-//
-//        println("JSON file written to $jsonFile")
-//        println("Raw category file written to $categoryFile")
-//        println("Attention: These posts could not be categorized")
-//        enrichedEntries
-//            .filter { it.category == EntryCategorizer.categoryNeeded}
-//            .sortedBy { it.date }
-//            .forEach { println(it) }
+        println(spending)
+        println("JSON file written to $jsonFile")
+        println("Raw category file written to $categoryFile")
+        println("Attention: Unclassifed posts above  could not be categorized")
 
     }
 }

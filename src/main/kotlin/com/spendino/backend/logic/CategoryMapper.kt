@@ -1,21 +1,19 @@
 package com.spendino.backend.logic
 
-import com.spendino.backend.data.Category
 import com.spendino.backend.data.SpendingData
 import com.spendino.backend.data.StatementEntry
 import org.springframework.stereotype.Component
 
 @Component
-// TODO: Fix naming of everything
 class CategoryMapper(
     val categorizer: EntryCategorizer
-)  {
+) {
 
     fun categorize(statementEntries: List<StatementEntry>): SpendingData {
 
         val spendingData = SpendingData()
 
-        statementEntries.forEach{categorize(it, spendingData)}
+        statementEntries.forEach { categorize(it, spendingData) }
 
         return spendingData
     }
@@ -24,7 +22,7 @@ class CategoryMapper(
         val categories = categorizer.categorize(entry) ?: return
         val spending = StatementEntry(entry.date, entry.description, entry.amount)
 
-        if(categories.category == EntryCategorizer.categoryNeeded) {
+        if (categories.category == EntryCategorizer.categoryNeeded) {
             spendingData.uncategorized.add(spending)
         } else {
             spendingData.addSpending(spending, categories.category, categories.subCategory)
