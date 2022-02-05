@@ -14,7 +14,7 @@ class SpendinoGenerator(
 
     override fun run(vararg args: String?) {
 
-        val month = "2021-12"
+        val month = "2022-01"
         val pathPrefix = "C:\\Daniel\\Projects\\spendino-backend\\backend_data\\"
 
         val cardFile = pathPrefix + "card.txt"
