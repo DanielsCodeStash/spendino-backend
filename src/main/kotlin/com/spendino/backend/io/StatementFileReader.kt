@@ -5,8 +5,8 @@ import java.io.File
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-fun parseStatementFile(filePath: String, month: String) =
-    File(filePath)
+fun parseStatementFile(file: File, month: String) =
+    file
         .readLines()
         .filter { it.startsWith(month) }
         .map { parseLine(it) }

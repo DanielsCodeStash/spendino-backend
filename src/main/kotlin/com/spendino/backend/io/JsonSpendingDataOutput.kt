@@ -7,7 +7,7 @@ import com.spendino.backend.logic.EntryCategorizer
 import java.io.File
 import kotlin.math.absoluteValue
 
-fun SpendingData.writeSpendinoJson(outPath: String) {
+fun SpendingData.writeSpendinoJson(files: FileSystem) {
 
     var out = "[\n"
 
@@ -25,7 +25,9 @@ fun SpendingData.writeSpendinoJson(outPath: String) {
 
     out += "]"
 
+    val outPath = files.getNewFilePath(".json", monthPrefix = true, removeDashes = true)
     File(outPath).writeText(out)
+    println("JSON file written to $outPath")
 }
 
 private fun getCategoryJson(category: Category): String {
