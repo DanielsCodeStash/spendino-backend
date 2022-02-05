@@ -7,7 +7,7 @@ import com.spendino.backend.logic.EntryCategorizer
 import java.io.File
 import kotlin.math.absoluteValue
 
-fun SpendingData.writeJson(outPath: String) {
+fun SpendingData.writeSpendinoJson(outPath: String) {
 
     var out = "[\n"
 
