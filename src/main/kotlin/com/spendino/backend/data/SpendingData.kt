@@ -17,8 +17,8 @@ data class SpendingData(
         category.addSpending(spendingEntry, subCategoryName)
     }
 
-    fun getCategory(name: String): Category {
-        return categories.first { it.name == name }
+    fun getCategory(name: String): Category? {
+        return categories.firstOrNull { it.name == name }
     }
 
     override fun toString(): String {

@@ -16,8 +16,11 @@ fun SpendingData.writeSpendinoJson(files: FileSystem) {
         EntryCategorizer.monthlyCat,
         EntryCategorizer.base,
         EntryCategorizer.oneTime
-    ).forEach {
-        out += getCategoryJson(getCategory(it)) + "\n"
+    ).forEach { categoryString ->
+
+        getCategory(categoryString)?.let {
+            out += getCategoryJson(it) + "\n"
+        }
     }
 
     // remove last ","
