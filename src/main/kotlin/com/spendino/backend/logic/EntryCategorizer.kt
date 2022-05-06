@@ -15,10 +15,14 @@ class EntryCategorizer(
     companion object {
         const val categoryNeeded = "<needs classification>"
 
-        const val housingCat = "Bostad"
-        const val monthlyCat = "Fasta utgift"
-        const val oneTime = "One time"
+        const val housingCat = "Home"
         const val base = "Base"
+        const val funCat = "Fun"
+        const val food = "Food"
+        const val transport = "Transport"
+        const val spending = "Spending"
+        const val saving = "Savings"
+
     }
 
     data class Categories(

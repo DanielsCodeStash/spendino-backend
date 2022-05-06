@@ -3,22 +3,26 @@ package com.spendino.backend.logic
 import com.spendino.backend.data.SpendingData
 import com.spendino.backend.data.StatementEntry
 
-fun applyStaticModifications(data: SpendingData) {
+fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) {
 
     // rent
     val rawRentPost = data.extractMatchingUncategorizedPost("cyklisten")
     val rentPost = rawRentPost.copy(amount = -2618)
-    data.addSpending(rentPost, EntryCategorizer.housingCat, "Hyra")
+    data.addSpending(rentPost, EntryCategorizer.housingCat, "Rent")
 
     // interest payment
     val rawLoanPost = data.extractMatchingUncategorizedPost("lån")
     val loanPost = rawLoanPost.copy(amount = (rawLoanPost.amount + 3125))
-    data.addSpending(loanPost, EntryCategorizer.housingCat, "Ränta")
+    data.addSpending(loanPost, EntryCategorizer.housingCat, "Interest")
 
     // standard posts
-    data.addStaticPost(-3125, EntryCategorizer.housingCat, "Amortering")
-    data.addStaticPost(-200, EntryCategorizer.housingCat, "Vatten")
-    data.addStaticPost(-350, EntryCategorizer.monthlyCat, "Linser")
+    data.addStaticPost(-3125, EntryCategorizer.saving, "Amortization")
+    data.addStaticPost(-200, EntryCategorizer.housingCat, "Water")
+    data.addStaticPost(-350, EntryCategorizer.base, "Contact lenses")
+
+    // savings
+    data.addStaticPost(savingHandler.daniel, EntryCategorizer.saving, "D")
+    data.addStaticPost(savingHandler.lyrin, EntryCategorizer.saving, "L")
 
 }
 

@@ -1,14 +1,11 @@
 categories:
-  Base:
-    "[Mat och bas]":
+  Food:
+    "[Food and groceries]":
       - ica nära
       - willys
       - coop
       - rusta backaplan
       - ica supermarket
-      - Apotek
-      - apohem
-      - Apotea
       - HELLOFRESH
       - ICA KVANTUM
       - GOTEBORGS ORIEN
@@ -25,7 +22,77 @@ categories:
       - Ica super
       - KONDITORI
 
-    "[Mat ute]":
+  Base:
+    Pharmacy:
+      - Apotek
+      - apohem
+      - Apotea
+
+    Dental:
+      - frisktandv
+      - AQUA DENTAL
+
+    "[Hair cutting]":
+      - Live Salong
+      - Barbersh
+
+    Makeup:
+      - Kicks
+
+    Gym:
+      - GYMGROSSISTEN
+      - Nordicwell
+    CSN:
+      - csn
+    Akassa:
+      - Akad.a-kassa
+    Bank:
+      - enkla vardag
+      - ÅRSAVGIFT
+    Phone:
+      - hallon.se
+
+  Home:
+    Electricity:
+      - gbg energi
+      - göteborg energi
+      - dinel
+    "[Home inscurance]":
+      - folksam
+
+
+  Transport:
+    "[Public Transportation]":
+      - VASTTRAFIK
+      - Västtrafik
+    "[Parking home]":
+      - Cyklisten parkerings
+
+  Fun:
+    "[Computer games]":
+      - STEAMGAMES
+    Cinema:
+      - FILMSTADEN
+    Streaming:
+      - spotify
+      - netflix.com
+      - hbomax
+      - audible
+      - GOOGLE STORAGE
+      - discovery+
+    Alcohol:
+      - systembolaget
+      - SCHNITZELPLATZ
+      - ZAMENHOF
+      - IRISH EMBASSY JERNTORG
+      - Systembolage
+
+    Cafe:
+      - Asti Italia
+      - BROGYLLEN LANDALA
+      - ESPRESSO HOUSE
+
+    "[Eating out]":
       - lilla istanbul
       - zosaki
       - sannegardens
@@ -52,59 +119,17 @@ categories:
       - Lacsa pizzer
       - BACKAPLAN WOK
 
-    Klippning:
-      - Live Salong
-      - Barbersh
-
-    Smink:
-      - Kicks
-
-    "[Öl]":
-      - systembolaget
-      - SCHNITZELPLATZ
-      - ZAMENHOF
-      - IRISH EMBASSY JERNTORG
-      - Systembolage
-
-    Gym:
-      - GYMGROSSISTEN
-
-  Bostad:
-    EL:
-      - gbg energi
-      - göteborg energi
-      - dinel
-
-  "[Fasta utgift]":
-    CSN:
-      - csn
-    Akassa:
-      - Akad.a-kassa
-    "[Försäkring]":
-      - folksam
-    "[Tandvård]":
-      - frisktandv
-    Bank:
-      - enkla vardag
-    "[Västtrafik]":
-      - västtrafik
-      - vasttrafik
-      - FLYGBUSSARNA
-    Telefon:
-      - hallon.se
-    Streaming:
-      - spotify
-      - netflix.com
-      - hbomax
-      - audible
-      - GOOGLE STORAGE
-      - discovery+
-
-  "[One time]":
-    Datorspel:
-      - STEAMGAMES
-    Bio:
-      - FILMSTADEN
+  Spending:
+    Hornbach:
+      - HORNBACH
+    Zalando:
+      - Zalando
+    Stadium:
+      - STADIUM
+    Ahlens:
+      - AHLENS
+    Netonnet:
+      - Netonnet
 
 ignored:
   - entercard group ab

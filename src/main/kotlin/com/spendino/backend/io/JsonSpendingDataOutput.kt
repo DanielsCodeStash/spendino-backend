@@ -4,8 +4,10 @@ import com.spendino.backend.data.Category
 import com.spendino.backend.data.SpendingData
 import com.spendino.backend.data.SubCategory
 import com.spendino.backend.logic.EntryCategorizer
+
 import java.io.File
 import kotlin.math.absoluteValue
+
 
 fun SpendingData.writeSpendinoJson(files: FileSystem) {
 
@@ -13,9 +15,12 @@ fun SpendingData.writeSpendinoJson(files: FileSystem) {
 
     listOf(
         EntryCategorizer.housingCat,
-        EntryCategorizer.monthlyCat,
         EntryCategorizer.base,
-        EntryCategorizer.oneTime
+        EntryCategorizer.food,
+        EntryCategorizer.funCat,
+        EntryCategorizer.transport,
+        EntryCategorizer.spending,
+        EntryCategorizer.saving
     ).forEach { categoryString ->
 
         getCategory(categoryString)?.let {
