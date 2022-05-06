@@ -17,7 +17,7 @@ class SpendinoGenerator(
     override fun run(vararg args: String?) {
 
         val files = FileSystem(
-            month = "2022-02",
+            month = "2022-04",
             basePath = "C:\\Users\\danie\\Google Drive\\filer\\Spendino\\"
         )
 
