@@ -40,8 +40,10 @@ categories:
       - Kicks
 
     Gym:
-      - GYMGROSSISTEN
       - Nordicwell
+
+    "[Protein & supplements]":
+      - GYMGROSSISTEN
     CSN:
       - csn
     Akassa:
@@ -118,6 +120,8 @@ categories:
       - SYLOS
       - Lacsa pizzer
       - BACKAPLAN WOK
+      - Osman s Grill
+      - Morgon Coffee Roas
 
   Spending:
     Hornbach:
@@ -130,6 +134,16 @@ categories:
       - AHLENS
     Netonnet:
       - Netonnet
+    "[H&M]":
+      - HM SE0221
+    Kjell:
+      - KJELL
+    Amazon:
+      - AMAZONRETAIL
+    "[Book store]":
+      - AKADEMIBOKHANDE
+    Blomsterlandet:
+      - BLOMSTERLANDET
 
 ignored:
   - entercard group ab
