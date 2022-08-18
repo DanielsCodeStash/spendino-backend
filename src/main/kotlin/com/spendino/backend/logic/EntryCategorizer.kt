@@ -35,7 +35,7 @@ class EntryCategorizer(
         val description = statementEntry.description.trim().toLowerCase()
         val date = statementEntry.date
 
-        if(config.ignored.any { description.contains(it, true) }) {
+        if (config.ignored.any { description.contains(it, true) }) {
             return null
         }
 
@@ -49,11 +49,15 @@ class EntryCategorizer(
         config.categories.forEach { (categoryName, subCategory) ->
             subCategory.forEach { (subCategoryName, statementDescriptions) ->
                 statementDescriptions.forEach { statementDescription ->
-                    if(description.contains(statementDescription, ignoreCase = true)) {
+
+                    if (statementDescription == "") {
+                        throw RuntimeException("Empty description in config.yml $categoryName > $subCategoryName")
+                    }
+                    if (description.contains(statementDescription, ignoreCase = true)) {
                         return Categories(categoryName, subCategoryName)
                     }
                 }
-             }
+            }
         }
         return null
     }

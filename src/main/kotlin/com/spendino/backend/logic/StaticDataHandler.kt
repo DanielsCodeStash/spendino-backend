@@ -20,6 +20,10 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
     data.addStaticPost(-200, EntryCategorizer.housingCat, "Water")
     data.addStaticPost(-350, EntryCategorizer.base, "Contact lenses")
 
+    // insurance
+    data.addStaticPost(608, EntryCategorizer.transport, "Car insurance")
+    data.addStaticPost(180, EntryCategorizer.housingCat, "Home insurance")
+
     // savings
     data.addStaticPost(savingHandler.daniel, EntryCategorizer.saving, "D")
     data.addStaticPost(savingHandler.lyrin, EntryCategorizer.saving, "L")

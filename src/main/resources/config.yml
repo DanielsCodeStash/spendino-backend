@@ -21,6 +21,10 @@ categories:
       - Ica nara
       - Ica super
       - KONDITORI
+      - Asian Liv
+      - MINI STOP ASIAN FOOD
+      - HISINGENS FISK
+      - ARJEPLOGVILT
 
   Base:
     Pharmacy:
@@ -31,6 +35,7 @@ categories:
     Dental:
       - frisktandv
       - AQUA DENTAL
+      - Hisingen Tandvard
 
     "[Hair cutting]":
       - Live Salong
@@ -53,15 +58,13 @@ categories:
       - ÅRSAVGIFT
     Phone:
       - hallon.se
+      - hallon
 
   Home:
     Electricity:
       - gbg energi
       - göteborg energi
       - dinel
-    "[Home inscurance]":
-      - folksam
-
 
   Transport:
     "[Public Transportation]":
@@ -69,7 +72,14 @@ categories:
       - Västtrafik
     "[Parking home]":
       - Cyklisten parkerings
-
+    "Parking":
+      - Easypark
+      - PARKSTER
+    Gasoline:
+      - OKQ8
+      - INGO
+    Fordonsskatt:
+      - Fordonsskatt
   Fun:
     "[Computer games]":
       - STEAMGAMES
@@ -93,6 +103,8 @@ categories:
       - Asti Italia
       - BROGYLLEN LANDALA
       - ESPRESSO HOUSE
+      - Pressbyran
+      - Hastevikskiosk
 
     "[Eating out]":
       - lilla istanbul
@@ -122,6 +134,19 @@ categories:
       - BACKAPLAN WOK
       - Osman s Grill
       - Morgon Coffee Roas
+      - RESTAURANG CITY
+      - MAX SKELLEFTEA
+      - BAGERIET VEMDALEN
+      - RESTAURANG TRIPTI
+      - IDREGRILLEN
+      - MCDONALDS
+      - GLOBAL RESTAURANG
+      - RESTAURANG MARIA
+      - LUCKY SUSHI
+      - INDIAN PALACE
+      - FRASSES ARJEPLO
+      - PIZZERIA
+      - KANJANA BRANNSTROM THA
 
   Spending:
     Hornbach:
@@ -144,6 +169,26 @@ categories:
       - AKADEMIBOKHANDE
     Blomsterlandet:
       - BLOMSTERLANDET
+    "[Add Nature]":
+      - addnature
+    Airbnb:
+      - AIRBNB
+    XXL:
+      - XXL
+    STF:
+      - STF RITSEM
+    IKEA:
+      - IKEA
+    Puzzle:
+      - pusselavenyn
+    Badminton:
+      - MATCHi
+    Elgiganten:
+      - Elgiganten
+    Police:
+      - POLISEN
+    Klarna:
+      - Klarna bank
 
 ignored:
   - entercard group ab
@@ -153,3 +198,4 @@ ignored:
   - Pension
   - skandia liv
   - 56990473967
+  - folksam
