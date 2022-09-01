@@ -31,6 +31,7 @@ categories:
       - Apotek
       - apohem
       - Apotea
+      - W*meds.com
 
     Dental:
       - frisktandv
@@ -80,6 +81,10 @@ categories:
       - INGO
     Fordonsskatt:
       - Fordonsskatt
+    "[Car wash]":
+      - GRIMBOS MEK
+    "[Congestion tax]":
+      - Trängselskat
   Fun:
     "[Computer games]":
       - STEAMGAMES
@@ -147,6 +152,9 @@ categories:
       - FRASSES ARJEPLO
       - PIZZERIA
       - KANJANA BRANNSTROM THA
+      - Cheers Pub
+      - Foodora
+      - JARNGRILLEN
 
   Spending:
     Hornbach:
@@ -189,6 +197,15 @@ categories:
       - POLISEN
     Klarna:
       - Klarna bank
+    Books:
+      - Klarna*bokus.com
+    Bluebox:
+      - Klarna*bluebox.se
+    Biltema:
+      - BILTEMA
+    Flight:
+      - KLM
+
 
 ignored:
   - entercard group ab
@@ -199,3 +216,4 @@ ignored:
   - skandia liv
   - 56990473967
   - folksam
+  - Kåpan
