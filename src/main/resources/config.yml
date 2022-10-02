@@ -6,6 +6,7 @@ categories:
       - coop
       - rusta backaplan
       - ica supermarket
+      - Gott i Gott
       - HELLOFRESH
       - ICA KVANTUM
       - GOTEBORGS ORIEN
@@ -37,6 +38,7 @@ categories:
       - frisktandv
       - AQUA DENTAL
       - Hisingen Tandvard
+      - LINNEGATANS IMPLANTATK
 
     "[Hair cutting]":
       - Live Salong
@@ -79,12 +81,15 @@ categories:
     Gasoline:
       - OKQ8
       - INGO
+      - ST1
     Fordonsskatt:
       - Fordonsskatt
     "[Car wash]":
       - GRIMBOS MEK
     "[Congestion tax]":
       - Trängselskat
+    "[Infrastructure fee]":
+      - Infrastrukt
   Fun:
     "[Computer games]":
       - STEAMGAMES
@@ -110,6 +115,7 @@ categories:
       - ESPRESSO HOUSE
       - Pressbyran
       - Hastevikskiosk
+      - Jafaris Group
 
     "[Eating out]":
       - lilla istanbul
@@ -137,6 +143,7 @@ categories:
       - SYLOS
       - Lacsa pizzer
       - BACKAPLAN WOK
+      - KG KELLARE
       - Osman s Grill
       - Morgon Coffee Roas
       - RESTAURANG CITY
@@ -155,6 +162,8 @@ categories:
       - Cheers Pub
       - Foodora
       - JARNGRILLEN
+      - SPIKAT
+      - GOLDEN WAFFEL
 
   Spending:
     Hornbach:
@@ -191,6 +200,8 @@ categories:
       - pusselavenyn
     Badminton:
       - MATCHi
+    Swimming:
+      - LUNDBYBADET
     Elgiganten:
       - Elgiganten
     Police:
@@ -205,6 +216,9 @@ categories:
       - BILTEMA
     Flight:
       - KLM
+      - PAL AIR DIGITAL
+    Ekokul:
+      - Ekokul
 
 
 ignored:

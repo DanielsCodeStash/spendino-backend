@@ -11,12 +11,16 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
     data.addSpending(rentPost, EntryCategorizer.housingCat, "Rent")
 
     // interest payment
-    val rawLoanPost = data.extractMatchingUncategorizedPost("lån")
-    val loanPost = rawLoanPost.copy(amount = (rawLoanPost.amount + 3125))
+    val rawLoanPosts = data.extractAllMatchingUncategorizedPosts("lån")
+    val totalLoanCost = rawLoanPosts.sumBy { it.amount }
+    val amortizationSmall = 68
+    val amortizationBig = 3125
+    val totalAmortization = amortizationBig + amortizationSmall
+    val loanPost = rawLoanPosts.first().copy(description = "Two loans", amount = totalLoanCost + totalAmortization)
     data.addSpending(loanPost, EntryCategorizer.housingCat, "Interest")
 
     // standard posts
-    data.addStaticPost(-3125, EntryCategorizer.saving, "Amortization")
+    data.addStaticPost(-totalAmortization, EntryCategorizer.saving, "Amortization")
     data.addStaticPost(-200, EntryCategorizer.housingCat, "Water")
     data.addStaticPost(-350, EntryCategorizer.base, "Contact lenses")
 
@@ -34,6 +38,12 @@ private fun SpendingData.extractMatchingUncategorizedPost(description: String): 
     val post = this.uncategorized.first { it.description.toLowerCase().startsWith(description)}
     this.uncategorized.remove(post)
     return post
+}
+
+private fun SpendingData.extractAllMatchingUncategorizedPosts(description: String): List<StatementEntry> {
+    val posts = this.uncategorized.filter { it.description.toLowerCase().startsWith(description)}
+    posts.forEach { this.uncategorized.remove(it) }
+    return posts
 }
 
 private fun SpendingData.addStaticPost(amount: Int, category: String, subCategory: String) {
