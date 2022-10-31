@@ -47,6 +47,9 @@ categories:
     Makeup:
       - Kicks
 
+    Doctor:
+      - Barnmorskegruppen
+
     Gym:
       - Nordicwell
 
@@ -93,6 +96,7 @@ categories:
   Fun:
     "[Computer games]":
       - STEAMGAMES
+      - Greenmangaming
     Cinema:
       - FILMSTADEN
     Streaming:
@@ -108,6 +112,7 @@ categories:
       - ZAMENHOF
       - IRISH EMBASSY JERNTORG
       - Systembolage
+      - Stena Alcohol
 
     Cafe:
       - Asti Italia
@@ -116,6 +121,7 @@ categories:
       - Pressbyran
       - Hastevikskiosk
       - Jafaris Group
+      - ME & TEA
 
     "[Eating out]":
       - lilla istanbul
@@ -164,6 +170,10 @@ categories:
       - JARNGRILLEN
       - SPIKAT
       - GOLDEN WAFFEL
+      - Duy Tan
+      - Fiskebaren
+      - Stena Mat
+      - RESTAURANG BRS
 
   Spending:
     Hornbach:
@@ -198,8 +208,6 @@ categories:
       - IKEA
     Puzzle:
       - pusselavenyn
-    Badminton:
-      - MATCHi
     Swimming:
       - LUNDBYBADET
     Elgiganten:
@@ -219,7 +227,12 @@ categories:
       - PAL AIR DIGITAL
     Ekokul:
       - Ekokul
-
+    Tickster:
+      - TICKSTER
+    "[Clas Ohlson]":
+      - CLAS OHLSON
+    "[Stena Cruise]":
+      - Stena Line
 
 ignored:
   - entercard group ab
@@ -231,3 +244,4 @@ ignored:
   - 56990473967
   - folksam
   - Kåpan
+  - misterspex

@@ -32,16 +32,21 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
     data.addStaticPost(savingHandler.daniel, EntryCategorizer.saving, "D")
     data.addStaticPost(savingHandler.lyrin, EntryCategorizer.saving, "L")
 
+    // badminton modification (almost always shared cost)
+    data.extractAllMatchingUncategorizedPosts("MATCHi")
+        .map { it.copy(amount = it.amount / 2 ) }
+        .forEach { data.addSpending(it, EntryCategorizer.spending, "Badminton")}
+
 }
 
 private fun SpendingData.extractMatchingUncategorizedPost(description: String): StatementEntry {
-    val post = this.uncategorized.first { it.description.toLowerCase().startsWith(description)}
+    val post = this.uncategorized.first { it.description.toLowerCase().startsWith(description.toLowerCase())}
     this.uncategorized.remove(post)
     return post
 }
 
 private fun SpendingData.extractAllMatchingUncategorizedPosts(description: String): List<StatementEntry> {
-    val posts = this.uncategorized.filter { it.description.toLowerCase().startsWith(description)}
+    val posts = this.uncategorized.filter { it.description.toLowerCase().startsWith(description.toLowerCase())}
     posts.forEach { this.uncategorized.remove(it) }
     return posts
 }
