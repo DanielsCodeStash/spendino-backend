@@ -43,6 +43,7 @@ categories:
     "[Hair cutting]":
       - Live Salong
       - Barbersh
+      - DEELPO AB
 
     Makeup:
       - Kicks
@@ -81,6 +82,7 @@ categories:
     "Parking":
       - Easypark
       - PARKSTER
+      - PARKERING GÖTEB
     Gasoline:
       - OKQ8
       - INGO
@@ -93,6 +95,8 @@ categories:
       - Trängselskat
     "[Infrastructure fee]":
       - Infrastrukt
+    "[Car shop]":
+      - HISINGE BIL
   Fun:
     "[Computer games]":
       - STEAMGAMES
@@ -171,9 +175,12 @@ categories:
       - SPIKAT
       - GOLDEN WAFFEL
       - Duy Tan
+      - KFC GOTEBORG
       - Fiskebaren
       - Stena Mat
       - RESTAURANG BRS
+      - NORDIC SPORTBAR
+      - Bombay Bistro
 
   Spending:
     Hornbach:
@@ -233,6 +240,17 @@ categories:
       - CLAS OHLSON
     "[Stena Cruise]":
       - Stena Line
+    "Smartphoto":
+      - smartphoto
+    "[ÖoB]":
+      - OOB BACKAPLAN
+    "Brothers":
+      - Brothers Nordstan
+    "[SJ Train]":
+      - SJ.SE
+    "[Jack & Jones]":
+      - K*bestseller
+
 
 ignored:
   - entercard group ab

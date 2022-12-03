@@ -31,7 +31,8 @@ private fun getCurrencyColumnData(cols: List<String>) =
 private fun parseCurrencyInput(input: String) =
     input
         .substring(0, input.indexOf(',')) // ignore cents
-        .replace(" ", "") // remove thousand-separator
+        .replace(" ", "") // remove a thousand separator
+        .replace("\u00A0","") // remove non-breaking space used as a thousand separator
         .replace("−", "-") // replace dash with minus
         .toInt()
 
