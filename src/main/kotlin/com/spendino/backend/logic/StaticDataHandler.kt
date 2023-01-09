@@ -7,7 +7,7 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
 
     // rent
     val rawRentPost = data.extractMatchingUncategorizedPost("cyklisten")
-    val rentPost = rawRentPost.copy(amount = -2618)
+    val rentPost = rawRentPost.copy(amount = -2749)
     data.addSpending(rentPost, EntryCategorizer.housingCat, "Rent")
 
     // interest payment
