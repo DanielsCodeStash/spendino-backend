@@ -22,7 +22,6 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
     // standard posts
     data.addStaticPost(-totalAmortization, EntryCategorizer.saving, "Amortization")
     data.addStaticPost(-200, EntryCategorizer.housingCat, "Water")
-    data.addStaticPost(-350, EntryCategorizer.base, "Contact lenses")
 
     // insurance
     data.addStaticPost(608, EntryCategorizer.transport, "Car insurance")

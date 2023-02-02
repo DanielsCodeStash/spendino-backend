@@ -21,8 +21,8 @@ class SpendinoGenerator(
         val askForSavings = true
 
         val files = FileSystem(
-            month = "2022-04",
-            basePath = "G:\\My Drive\\filer\\Spendino\\"
+            month = "2023-01",
+            basePath = "C:\\Users\\danie\\My Drive\\filer\\Spendino\\"
         )
 
         if (askForSavings) savingHandler.fetchInput()

@@ -57,6 +57,10 @@ categories:
 
     "[Protein & supplements]":
       - GYMGROSSISTEN
+
+    "[Contact lenses]":
+      - misterspex
+
     CSN:
       - csn
     Akassa:
@@ -111,6 +115,7 @@ categories:
       - audible
       - GOOGLE STORAGE
       - discovery+
+      - HBO MAX
     Alcohol:
       - systembolaget
       - SCHNITZELPLATZ
@@ -261,10 +266,8 @@ ignored:
   - entercard group ab
   - lön
   - inbetalning bankgiro
-  - netlens
   - Pension
   - skandia liv
   - 56990473967
   - folksam
   - Kåpan
-  - misterspex
