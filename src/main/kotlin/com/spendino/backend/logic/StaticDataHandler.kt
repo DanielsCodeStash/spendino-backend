@@ -19,6 +19,9 @@ fun applyStaticModifications(data: SpendingData, savingHandler: SavingsHandler) 
     val loanPost = rawLoanPosts.first().copy(description = "Two loans", amount = totalLoanCost + totalAmortization)
     data.addSpending(loanPost, EntryCategorizer.housingCat, "Interest")
 
+    // parking
+    data.addStaticPost(1000, EntryCategorizer.transport, "Parking home")
+
     // standard posts
     data.addStaticPost(-totalAmortization, EntryCategorizer.saving, "Amortization")
     data.addStaticPost(-200, EntryCategorizer.housingCat, "Water")

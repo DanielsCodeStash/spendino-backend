@@ -51,6 +51,8 @@ categories:
 
     Doctor:
       - Barnmorskegruppen
+      - NILSSON LÄKAR
+      - CAPIO
 
     Gym:
       - Nordicwell
@@ -117,6 +119,10 @@ categories:
       - GOOGLE STORAGE
       - discovery+
       - HBO MAX
+      - Google Payment
+    Boardgames:
+      - SF-Bokhandel
+
     Alcohol:
       - systembolaget
       - SCHNITZELPLATZ
@@ -132,9 +138,11 @@ categories:
       - CONVINI
       - Pressbyran
       - Hastevikskiosk
+      - KAFFELABBET
       - Jafaris Group
       - ME & TEA
       - MR CAKE
+      - Forida s
 
     "[Eating out]":
       - lilla istanbul
@@ -209,8 +217,13 @@ categories:
       - Netonnet
     "[H&M]":
       - HM SE0221
+    "[Electric scooters]":
+      - TIER
+      - Ryde
     Kjell:
       - KJELL
+    Theater:
+      - LORENSBERGSTEATERN
     Amazon:
       - AMAZONRETAIL
     "[Book store]":
@@ -227,6 +240,7 @@ categories:
       - STF RITSEM
     IKEA:
       - IKEA
+
     Puzzle:
       - pusselavenyn
     Swimming:
@@ -266,29 +280,8 @@ categories:
       - K*bestseller
     Liseberg:
       - liseberg
-    "[Wien Resa]":
-      - CLASSIC ENSEMBLE VIENN
-      - RYANAIR0000000FYF9TL0
-      - CC TAXICENTER GMBH
-      - Kapuzinergruft
-      - NHM Eintritt
-      - Laederach Oesterreich
-      - LW LIN WANG GASTRO
-      - Schloss Schönbrun
-      - Schlosscafe Schönbrunn
-      - VIENNA MARRIOTT HOTEL
-      - Henry Pier West
-      - Imperial Austria Palac
-      - Erste Bank
-      - OEBB Ticket Automat
-      - Wien Mobil
-      - ERZHERZOGTUM Naschmark
-      - SWEDAVIA.SE
-      - CALZEDONIA
-      - Quality Hotel Vienna
-      - NOODLE KING
-      - ZERV ApS
-      - PHIL
+    "[Lofoten trip]":
+      - Booking.c
     Museum:
       - SJÖFARTSMUSEET
 
