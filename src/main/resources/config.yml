@@ -27,6 +27,7 @@ categories:
       - MINI STOP ASIAN FOOD
       - HISINGENS FISK
       - ARJEPLOGVILT
+      - DOLLARSTORE
 
   Base:
     Pharmacy:
@@ -94,6 +95,8 @@ categories:
       - OKQ8
       - INGO
       - ST1
+      - CIRCLE K
+      - Qstar
     Fordonsskatt:
       - Fordonsskatt
     "[Car wash]":
@@ -203,6 +206,8 @@ categories:
       - Sukki-Ne
       - MAC S KEBAB OCH GATUKO
       - KERSTIN PA
+      - FLYING BARREL
+      - PANDA FAST
 
   Spending:
     Hornbach:
@@ -282,6 +287,9 @@ categories:
       - liseberg
     "[Lofoten trip]":
       - Booking.c
+      - Radisson BLU
+      - LAPONIA
+      - TORGHATTEN
     Museum:
       - SJÖFARTSMUSEET
 
