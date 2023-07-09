@@ -22,6 +22,7 @@ class EntryCategorizer(
         const val transport = "Transport"
         const val spending = "Spending"
         const val saving = "Savings"
+        const val kid = "Kid"
 
     }
 

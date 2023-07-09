@@ -3,6 +3,7 @@ categories:
     "[Food and groceries]":
       - ica nära
       - willys
+      - Salukott
       - coop
       - rusta backaplan
       - ica supermarket
@@ -28,6 +29,11 @@ categories:
       - HISINGENS FISK
       - ARJEPLOGVILT
       - DOLLARSTORE
+      - KIWI
+
+  Kid:
+    Healthcare:
+      - Barnmorskegrup
 
   Base:
     Pharmacy:
@@ -91,12 +97,14 @@ categories:
       - Easypark
       - PARKSTER
       - PARKERING GÖTEB
+      - MobilPark
     Gasoline:
       - OKQ8
       - INGO
       - ST1
       - CIRCLE K
       - Qstar
+      - CIRCEL K
     Fordonsskatt:
       - Fordonsskatt
     "[Car wash]":
@@ -208,6 +216,9 @@ categories:
       - KERSTIN PA
       - FLYING BARREL
       - PANDA FAST
+      - CORSICA
+      - Max Burgers
+      - Stejk Street
 
   Spending:
     Hornbach:
@@ -290,6 +301,11 @@ categories:
       - Radisson BLU
       - LAPONIA
       - TORGHATTEN
+      - LOFOTR NÆRINGSD
+      - LOFOTR VIKI
+      - Brim Holding
+      - Pattareeya
+      - GADUS HAMNØY
     Museum:
       - SJÖFARTSMUSEET
 

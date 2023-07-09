@@ -20,7 +20,8 @@ fun SpendingData.writeSpendinoJson(files: FileSystem) {
         EntryCategorizer.funCat,
         EntryCategorizer.transport,
         EntryCategorizer.spending,
-        EntryCategorizer.saving
+        EntryCategorizer.saving,
+        EntryCategorizer.kid
     ).forEach { categoryString ->
 
         getCategory(categoryString)?.let {
