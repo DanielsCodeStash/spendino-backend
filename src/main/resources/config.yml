@@ -30,6 +30,7 @@ categories:
       - ARJEPLOGVILT
       - DOLLARSTORE
       - KIWI
+      - NOJDS
 
   Kid:
     Healthcare:
@@ -154,6 +155,7 @@ categories:
       - ME & TEA
       - MR CAKE
       - Forida s
+      - Ranias Donuts
 
     "[Eating out]":
       - lilla istanbul
@@ -296,6 +298,15 @@ categories:
       - K*bestseller
     Liseberg:
       - liseberg
+    Bio:
+      - BIOPALATSET
+    KappAhl:
+      - KappAhl
+    Bokhandel:
+      - adlibris
+      - bokus
+    Apple:
+      - apple.com
     "[Lofoten trip]":
       - Booking.c
       - Radisson BLU
