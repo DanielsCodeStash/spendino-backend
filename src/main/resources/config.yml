@@ -48,6 +48,7 @@ categories:
       - AQUA DENTAL
       - Hisingen Tandvard
       - LINNEGATANS IMPLANTATK
+      - HISINGEN TANDVÅ
 
     "[Hair cutting]":
       - Live Salong
@@ -156,6 +157,9 @@ categories:
       - MR CAKE
       - Forida s
       - Ranias Donuts
+      - RODA STEN CAFE O REST
+      - MATCHA HOUSE AB
+      - Smoothie Swede
 
     "[Eating out]":
       - lilla istanbul
@@ -167,6 +171,7 @@ categories:
       - VIETNAMHAKET
       - TURKISK SULTAN
       - FOOD LAB
+      - RESTAURANG ASIAN MAT
       - Kafe Alkemiste
       - INDISKA
       - COOP KONSUM
@@ -187,6 +192,7 @@ categories:
       - BACKAPLAN WOK
       - KG KELLARE
       - Osman s Grill
+      - RESTAURANG MARI
       - Morgon Coffee Roas
       - RESTAURANG CITY
       - MAX SKELLEFTEA
@@ -319,7 +325,10 @@ categories:
       - GADUS HAMNØY
     Museum:
       - SJÖFARTSMUSEET
-
+    Migrationsverket:
+      - MIGRATIONSVERKE
+    Letsdeal:
+      - letsdeal
 
 ignored:
   - entercard group ab
