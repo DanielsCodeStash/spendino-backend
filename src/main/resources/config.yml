@@ -5,13 +5,13 @@ categories:
       - willys
       - Salukott
       - coop
-      - rusta backaplan
       - ica supermarket
       - Gott i Gott
       - HELLOFRESH
       - ICA KVANTUM
       - GOTEBORGS ORIEN
       - GLADE JOHANS
+      - JANNES FISK
       - LIDL
       - HEMKOP
       - eleven
@@ -25,6 +25,7 @@ categories:
       - Ica super
       - KONDITORI
       - Asian Liv
+      - KROKSLATTS LIVS
       - MINI STOP ASIAN FOOD
       - HISINGENS FISK
       - ARJEPLOGVILT
@@ -35,6 +36,7 @@ categories:
   Kid:
     Healthcare:
       - Barnmorskegrup
+      - SAHLGRENSKA SJUKHUSET
 
   Base:
     Pharmacy:
@@ -135,6 +137,7 @@ categories:
       - Google Payment
     Boardgames:
       - SF-Bokhandel
+      - SPELEXPERTEN.COM
 
     Alcohol:
       - systembolaget
@@ -148,11 +151,15 @@ categories:
       - Asti Italia
       - BROGYLLEN LANDALA
       - ESPRESSO HOUSE
+      - ESPRESSO H
+      - LEJONET OCH BJORNEN
       - CONVINI
+      - Beautys ca
       - Pressbyran
       - Hastevikskiosk
       - KAFFELABBET
       - Jafaris Group
+      - JoeAndTheJuice
       - ME & TEA
       - MR CAKE
       - Forida s
@@ -166,13 +173,17 @@ categories:
       - zosaki
       - sannegardens
       - restaurang istanbul
+      - Benne över
+      - WANG BY WANG
       - sushi tiden
       - DA BELLO ENOTECA
       - VIETNAMHAKET
       - TURKISK SULTAN
+      - Benne Oever
       - FOOD LAB
       - RESTAURANG ASIAN MAT
       - Kafe Alkemiste
+      - RASA SAYANG
       - INDISKA
       - COOP KONSUM
       - ZOZAKI JAPAN
@@ -183,6 +194,7 @@ categories:
       - OLSTUGAN TULLEN
       - LILLA ISTANBUL
       - NADIAS RESTAURANG
+      - MAI THAI TAKE
       - Ramen-ya
       - Streetfood f
       - MOON THAI KITCHEN
@@ -201,12 +213,14 @@ categories:
       - IDREGRILLEN
       - MCDONALDS
       - GLOBAL RESTAURANG
+      - SIAM TAKEAWAY
       - RESTAURANG MARIA
       - LUCKY SUSHI
       - INDIAN PALACE
       - FRASSES ARJEPLO
       - PIZZERIA
       - KANJANA BRANNSTROM THA
+      - MASALA KITCHEN
       - Cheers Pub
       - Foodora
       - JARNGRILLEN
@@ -214,7 +228,10 @@ categories:
       - GOLDEN WAFFEL
       - Duy Tan
       - KFC GOTEBORG
+      - RESTAURANG NANKING
+      - TAWAN THAI KITCHEN
       - Fiskebaren
+      - THAI SAMILA KUNGSTEN
       - Stena Mat
       - RESTAURANG BRS
       - NORDIC SPORTBAR
@@ -241,11 +258,23 @@ categories:
       - Netonnet
     "[H&M]":
       - HM SE0221
+      - HM SE0444
+      - HM SE0210
+    "RUSTA":
+      - RUSTA
+    "Remitly":
+      - REMITLY
+    "Bauhause":
+      - BAUHAUS
     "[Electric scooters]":
       - TIER
       - Ryde
+    "[MÖLNDAL GAL]":
+      - MÖLNDAL GAL
     Kjell:
       - KJELL
+    Intersport:
+      - INTERSPORT
     Theater:
       - LORENSBERGSTEATERN
     Amazon:
@@ -296,6 +325,10 @@ categories:
       - smartphoto
     "[ÖoB]":
       - OOB BACKAPLAN
+    "Lindex":
+      - LINDEX
+    "Vanbruun":
+      - vanbruun
     "Brothers":
       - Brothers Nordstan
     "[SJ Train]":
@@ -306,11 +339,17 @@ categories:
       - liseberg
     Bio:
       - BIOPALATSET
+    Jula:
+      - JULA SVERIGE
     KappAhl:
       - KappAhl
+    Byggmax:
+      - byggmax
     Bokhandel:
       - adlibris
       - bokus
+    Babyworld:
+      - babyworld
     Apple:
       - apple.com
     "[Lofoten trip]":
@@ -325,6 +364,8 @@ categories:
       - GADUS HAMNØY
     Museum:
       - SJÖFARTSMUSEET
+      - VASAMUSEETS
+      - UNIVERSEUM
     Migrationsverket:
       - MIGRATIONSVERKE
     Letsdeal:
