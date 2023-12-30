@@ -16,6 +16,7 @@ categories:
       - HEMKOP
       - eleven
       - CO 252 BACKAPLA
+      - ASIAN FOODSTORE
       - Hemköp
       - Saigon city
       - Indian groc
@@ -200,6 +201,7 @@ categories:
       - MOON THAI KITCHEN
       - Dubbel Gard
       - SYLOS
+      - Barleys Food Factory
       - Lacsa pizzer
       - BACKAPLAN WOK
       - KG KELLARE
@@ -279,8 +281,13 @@ categories:
       - LORENSBERGSTEATERN
     Amazon:
       - AMAZONRETAIL
+    Jollyroom:
+      - JOLLYROOM
     "[Book store]":
       - AKADEMIBOKHANDE
+    Flowers:
+      - KUNGS-BLOMMAN
+      - BACKAPLANS BLOMMOR
     Blomsterlandet:
       - BLOMSTERLANDET
     "[Add Nature]":
@@ -370,6 +377,10 @@ categories:
       - MIGRATIONSVERKE
     Letsdeal:
       - letsdeal
+    Tjoloholms:
+      - TJOLOHOLMS SLOTT
+      - Zettle*Hagaljus AB
+      - Zettle*Kuddas
 
 ignored:
   - entercard group ab
