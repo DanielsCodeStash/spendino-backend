@@ -38,6 +38,12 @@ categories:
     Healthcare:
       - Barnmorskegrup
       - SAHLGRENSKA SJUKHUSET
+    "[Aqua Barn]":
+      - AQUA BARN AB
+    "[BABY WORLD]":
+      - BABY WORLD
+    PlayPen:
+      - "46739805185"
 
   Base:
     Pharmacy:
@@ -45,6 +51,7 @@ categories:
       - apohem
       - Apotea
       - W*meds.com
+      - KRONANS APOTE
 
     Dental:
       - frisktandv
@@ -57,6 +64,7 @@ categories:
       - Live Salong
       - Barbersh
       - DEELPO AB
+      - Abdul Frisorsalong
 
     Makeup:
       - Kicks
@@ -110,6 +118,7 @@ categories:
       - CIRCLE K
       - Qstar
       - CIRCEL K
+      - PREEM
     Fordonsskatt:
       - Fordonsskatt
     "[Car wash]":
@@ -161,6 +170,7 @@ categories:
       - KAFFELABBET
       - Jafaris Group
       - JoeAndTheJuice
+      - DAHLS BAGERI
       - ME & TEA
       - MR CAKE
       - Forida s
@@ -172,6 +182,7 @@ categories:
     "[Eating out]":
       - lilla istanbul
       - zosaki
+      - BISTROT
       - sannegardens
       - restaurang istanbul
       - Benne över
@@ -191,11 +202,13 @@ categories:
       - BURGER KING
       - SUBWAY
       - FLYING BARELL
+      - SURT RÄTTVIK
       - MEXIKANSKA MONARKIN
       - OLSTUGAN TULLEN
       - LILLA ISTANBUL
       - NADIAS RESTAURANG
       - MAI THAI TAKE
+      - CHOPCHOP
       - Ramen-ya
       - Streetfood f
       - MOON THAI KITCHEN
@@ -225,6 +238,7 @@ categories:
       - MASALA KITCHEN
       - Cheers Pub
       - Foodora
+      - MCD
       - JARNGRILLEN
       - SPIKAT
       - GOLDEN WAFFEL
@@ -242,6 +256,7 @@ categories:
       - MAC S KEBAB OCH GATUKO
       - KERSTIN PA
       - FLYING BARREL
+      - NYTTIG SNABBMAT
       - PANDA FAST
       - CORSICA
       - Max Burgers
@@ -381,6 +396,12 @@ categories:
       - TJOLOHOLMS SLOTT
       - Zettle*Hagaljus AB
       - Zettle*Kuddas
+    Travel:
+      - TRAINPLANET
+      - PHILIPPINE AIR
+      - LERDALSHÖJDEN
+      - LERDALSH
+      - Bangolfkl
 
 ignored:
   - entercard group ab
